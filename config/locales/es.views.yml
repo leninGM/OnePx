@@ -1,0 +1,13 @@
+es:
+  registrations:
+    new:
+      title: Crear una cuenta
+
+  helpers:
+    submit:
+      user:
+        create: Crear cuenta
+
+  form:
+    errors:
+      message: Por favor corrija los siguientes errores

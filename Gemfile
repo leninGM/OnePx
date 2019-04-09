@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'bcrypt'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
