@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'bcrypt'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
@@ -27,7 +28,7 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'minitest-rails', '~> 3.0'
+  gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'capybara', '>= 2.15'
   gem 'capybara-webkit'
