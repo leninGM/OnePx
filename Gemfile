@@ -30,7 +30,8 @@ group :development, :test do
   gem 'minitest-rails', '~> 3.0'
   gem 'minitest-rails-capybara'
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
+  gem 'capybara-webkit'
+  gem 'launchy'
 end
 
 
