@@ -1,0 +1,32 @@
+require: rubocop-performance
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "spec/fixtures/**/*"
+    - "tmp/**/*"
+    - "db/**/*"
+    - "bin/**/*"
+    - "config.ru"
+    - "Gemfile"
+    - "Rakefile"
+    - "config/**/*"
+    - "test/test_helper.rb"
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  ExtraDetails: true
+
+Rails:
+  Enabled: true
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: when_needed
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"

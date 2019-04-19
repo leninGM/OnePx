@@ -33,6 +33,8 @@ group :development, :test do
   gem 'capybara', '>= 2.15'
   gem 'capybara-webkit'
   gem 'launchy'
+  gem 'rubocop', require: false
+  gem 'rubocop-performance'
 end
 
 

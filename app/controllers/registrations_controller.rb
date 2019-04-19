@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RegistrationsController < ApplicationController
   def new
     @user = User.new
@@ -8,7 +10,7 @@ class RegistrationsController < ApplicationController
 
     if @user.save
       return redirect_to root_path,
-        notice: t('.welcome', email: @user.email)
+                         notice: t(".welcome", email: @user.email)
     end
 
     render :new
