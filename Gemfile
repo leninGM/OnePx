@@ -28,11 +28,12 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'minitest-rails'
-  gem 'minitest-rails-capybara'
   gem 'capybara', '>= 2.15'
   gem 'capybara-webkit'
   gem 'launchy'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
+  gem 'reek', require: false
   gem 'rubocop', require: false
   gem 'rubocop-performance'
 end

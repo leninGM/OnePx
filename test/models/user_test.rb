@@ -2,12 +2,13 @@
 
 require "test_helper"
 
+# The UserTest class is used to test the signup for users
 class UserTest < ActiveSupport::TestCase
   test "Valid user with valid attributes" do
-    user = User.new.tap do |u|
-      u.email = "test@email.com"
-      u.password = "pa$$word"
-      u.password_confirmation = "pa$$word"
+    user = User.new.tap do |model|
+      model.email = "test@email.com"
+      model.password = "pa$$word"
+      model.password_confirmation = "pa$$word"
     end
 
     assert_equal user.valid?, true
@@ -23,10 +24,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "Invalid user with duplicated email" do
-    user = User.new.tap do |u|
-      u.email = "user@email.com"
-      u.password = "pa$$word"
-      u.password_confirmation = "pa$$word"
+    user = User.new.tap do |model|
+      model.email = "user@email.com"
+      model.password = "pa$$word"
+      model.password_confirmation = "pa$$word"
     end
 
     assert_not_equal user.valid?, true
@@ -37,10 +38,10 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "Invalid user with short password" do
-    user = User.new.tap do |u|
-      u.email = "test@mail.com"
-      u.password = "pa$$"
-      u.password_confirmation = "pa$$"
+    user = User.new.tap do |model|
+      model.email = "test@mail.com"
+      model.password = "pa$$"
+      model.password_confirmation = "pa$$"
     end
 
     assert_not_equal user.valid?, true
