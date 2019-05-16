@@ -14,9 +14,10 @@ gem 'turbolinks', '~> 5'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'pretty_formatter'
 gem 'puma', '~> 3.7'
-gem 'rails', '~> 5.1.7'
+gem 'rails', '~> 5.2', '>= 5.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem 'bootsnap', '~> 1.4', '>= 1.4.4'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -35,6 +36,10 @@ group :development, :test do
   gem 'launchy'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+  gem 'pronto'
+  gem 'pronto-brakeman', require: false
+  gem 'pronto-reek', require: false
+  gem 'pronto-rubocop', require: false
   gem 'reek', require: false
   gem 'rubocop', require: false
   gem 'rubocop-performance'
