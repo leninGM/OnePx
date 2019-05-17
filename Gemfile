@@ -18,6 +18,7 @@ gem 'rails', '~> 5.2', '>= 5.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootsnap', '~> 1.4', '>= 1.4.4'
+gem 'sprockets-es6'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'

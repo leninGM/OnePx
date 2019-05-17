@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OnePx</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'account', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'account', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= link_to root_path do %>
+        <%= image_tag "onepx-small.png" %>
+      <% end %>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>
