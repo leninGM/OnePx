@@ -12,4 +12,9 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require flash
+//= require_self
+
+document.addEventListener('turbolinks:load', function() {
+  var flash = new Flash()
+})

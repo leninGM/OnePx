@@ -9,9 +9,12 @@
   </head>
 
   <body>
+    <header class="navbar">
+      <%= image_tag "onepx-tiny.png", class: "logo" %>
+    </header>
     <%- if flash.notice.present? %>
       <div class="flash-notice">
-        <%= flash.notice %>
+        <p><%= flash.notice %></p>
       </div>
     <%- end %>
 
