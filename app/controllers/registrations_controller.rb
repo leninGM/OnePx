@@ -11,6 +11,7 @@ class RegistrationsController < ApplicationController
     @user = User.new secure_params
 
     if @user.save
+      WelcomeMailer.welcome_email(@user).deliver_now
       return redirect_to root_path,
                          notice: t(".welcome", email: @user.email)
     end

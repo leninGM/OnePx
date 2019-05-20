@@ -1,0 +1,12 @@
+es:
+  layouts:
+    mailer:
+      footer: Derechos Reservados onepx %{year}.
+
+  welcome_mailer:
+    welcome_email:
+      subject: Bienvenido a onepx
+      greetings: Hola,
+      first_paragraph: "Gracias por registrarte y unirte a esta gran comunidad de fotografía."
+      second_paragraph: "Estamos anciosos por ver la primera fotografía que compartirás con nosotros."
+      bye: El equipo de onepx.
